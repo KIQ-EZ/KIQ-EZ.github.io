@@ -2,38 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Bisultan ne natural</title>
+  <title>Basilian natural</title>
   <style>
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+      background: linear-gradient(to bottom, #dbeadf, #f5f9f6);
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      animation: rainbowBG 10s infinite alternate;
+      font-family: 'Georgia', serif;
     }
 
     h1 {
-      color: white;
-      font-size: 4em;
-      text-shadow: 2px 2px 8px hotpink;
-      animation: sparkle 1.5s infinite alternate;
-    }
-
-    @keyframes sparkle {
-      0% { text-shadow: 2px 2px 5px hotpink; transform: scale(1); }
-      100% { text-shadow: 4px 4px 15px deeppink; transform: scale(1.05); }
-    }
-
-    @keyframes rainbowBG {
-      0% { filter: hue-rotate(0deg); }
-      100% { filter: hue-rotate(360deg); }
+      color: #2f4f4f;
+      font-size: 3em;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 <body>
-  <h1>Bisultan ne natural</h1>
+  <h1>Basilian natural</h1>
 </body>
 </html>

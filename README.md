@@ -16,20 +16,30 @@
       background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
       background-size: 400% 400%;
       animation: gradient 10s ease infinite;
-      color: white;
       text-align: center;
-      font: 700 clamp(28px, 8vw, 96px)/1.1 system-ui, -apple-system, "Segoe UI",
-            Roboto, Arial, "Helvetica Neue", sans-serif;
-      letter-spacing: .02em;
     }
+
     h1 {
       margin: 0;
-      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+      font: 900 clamp(28px, 8vw, 96px)/1.1 system-ui, -apple-system, "Segoe UI",
+            Roboto, Arial, "Helvetica Neue", sans-serif;
+      letter-spacing: .02em;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 5s linear infinite;
     }
+
     @keyframes gradient {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
+    }
+
+    @keyframes rainbow {
+      0% {background-position: 0%;}
+      100% {background-position: 100%;}
     }
   </style>
 </head>

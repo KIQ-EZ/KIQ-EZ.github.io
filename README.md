@@ -11,15 +11,16 @@
     }
     body {
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
       background-size: 400% 400%;
       animation: gradient 10s ease infinite;
       text-align: center;
     }
 
-    h1 {
+    h1, h2 {
       margin: 0;
       font: 900 clamp(28px, 8vw, 96px)/1.1 system-ui, -apple-system, "Segoe UI",
             Roboto, Arial, "Helvetica Neue", sans-serif;
@@ -29,6 +30,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: rainbow 5s linear infinite;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: clamp(18px, 4vw, 48px);
     }
 
     @keyframes gradient {
@@ -45,5 +51,6 @@
 </head>
 <body>
   <h1>Arsen Lox</h1>
+  <h2>Sosal?</h2>
 </body>
 </html>
